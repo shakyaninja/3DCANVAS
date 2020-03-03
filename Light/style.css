@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+canvas {
+    display: block;
+}
+#hide{
+  font-size: 12px;
+}
+#hide:hover{
+  cursor: pointer;
+  color: gray;
+}
+h1 {
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    font-family: 'Montserrat';
+    font-size: 7em;
+    text-transform: uppercase;
+    width: auto;
+    opacity: 0.5;
+    line-height: .8em;
+    border: 5px solid black;
+    padding: .2em;
+  }
+a{
+  color: black;
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  z-index: 3;
+  color: blaCK;
+  font-size: 48px;
+  transition: 0.5s ;
+}
+a:hover{
+  font-size: 32px;
+  color: #3e3e3e;
+}
+
+form{
+  background-color: rgba(133, 193, 233,0.7);
+  padding: 20px;
+  border-radius: 20px;
+  position: absolute;
+  top: 15%;
+  left: 3%;
+  z-index: 3;
+  display: inline;
+}
+
+.color_block{
+  width: 20px;
+  height: 20px;
+}
+#red{
+  background-color: rgb(255,0,0);
+}
+#green{
+  background-color: rgb(0, 255, 0);
+}
+#blue{
+  background-color: rgb(0, 0, 255);
+}
+#yellow{
+  background-color: #f0ed0c;
+}
+#purple{
+  background-color: #930cf0;
+}
+#orange{
+  background-color: #f07b0c;
+}
+.credit{
+  position: absolute;
+  top: 90%;
+  left: 20%;
+  text-align: center;
+}
+.control-instruction{
+  position: absolute;
+  top: 85%;
+  left: 10%;
+  text-align: center;
+}

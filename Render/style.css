@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+canvas {
+    display: block;
+}
+
+h1 {
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    font-family: 'Montserrat';
+    font-size: 7em;
+    text-transform: uppercase;
+    width: auto;
+    color: white;
+    opacity: 0.5;
+    line-height: .8em;
+    border: 5px solid white;
+    padding: .2em;
+  }
+a{
+  color: white;
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  z-index: 3;
+  font-size: 48px;
+  transition: 0.5s ;
+}
+a:hover{
+  font-size: 32px;
+  color: #3e3e3e;
+}
+
+.credit{
+  position: absolute;
+  top: 90%;
+  left: 20%;
+  text-align: center;
+}
+.control-instruction{
+  position: absolute;
+  top: 85%;
+  left: 10%;
+  text-align: center;
+}

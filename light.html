@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <title>Light</title>
+    <script src="https://use.fontawesome.com/047e566296.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Light/style.css">
+  </head>
+  <body>
+    <h1>Light Physics</h1>
+    <a href="./index.html">
+        <i class="fa fa-arrow-left"></i>
+    </a>
+    <p class="credit">Used three.js</p>
+    <p class="control-instruction">Controls to explore: Mouse Left : Orbit around (click and drag) , Mouse Right : Pan camera , Mouse Scroll : Zoom in and zoom out</p>
+    <form>
+      <span onclick="hide()" id="hide">Hide Menu</span>
+      <div id="formShow">
+        <div class="form-group">
+          <div class="colors container">
+            <div class="row">
+              <strong>
+                <span>Ambient : </span>
+                <span id="ambientDisplay"></span>
+              </strong>
+            </div>
+            <div class="row">
+              <label for="ambient">Intensity : </label>
+              <input type="range" id="ambient" min="0" max="1" step="0.01" oninput="getvalueambient()">
+            </div>
+            <div class="row">
+              <span>Ambient Colors : </span>
+            </div>
+            <div class="row">
+              <div class="col-2 m-1 color_block" id="green" onclick="update_light(1)"></div>
+              <div class="col-2 m-1 color_block" id="blue" onclick="update_light(2)"></div>
+              <div class="col-2 m-1 color_block" id="red" onclick="update_light(3)"></div>
+              <div class="col-2 m-1 color_block" id="yellow" onclick="update_light(4)"></div>
+              <div class="col-2 m-1 color_block" id="purple" onclick="update_light(5)"></div>
+              <div class="col-2 m-1 color_block" id="orange" onclick="update_light(6)"></div>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="container">
+            <div class="row">
+              <span ><strong>Point light insert</strong></span>
+            </div>
+            <div class="row">
+              <label for="xValue">X position : </label>
+              <input type="number" class="form-control" id="xValue" oninput="update_light_point()" value="0">
+            </div>
+            <div class="row">
+              <label for="yValue">Y position : </label>
+              <input type="number" class="form-control" id="yValue" oninput="update_light_point()" value="0">
+            </div>
+            <div class="row">
+              <label for="zValue">Z position : </label>
+              <input type="number" class="form-control" id="zValue" oninput="update_light_point()" value="0">
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="./OrbitControls.js"></script>
+    <script src="./Light/main.js"></script>
+
+  </body>
+</html>
